@@ -51,3 +51,27 @@ let someValue = 33;
 let stringNumber = String(someValue);
 console.log(stringNumber);
 console.log(typeof stringNumber);
+
+console.log("***********OPERATION*************");
+
+
+let str1 = "hello";
+let str2 = " arshiya";
+
+let str = str1 + str2;
+console.log(str);
+
+console.log (1 + "2");
+console.log("1" + 2);
+console.log("1" + 2 + 2);
+console.log("1" +( 2 + 2));
+console.log(1 + 2 + "2");
+
+console.log(+true); // not good
+console.log(+""); //not good
+
+let gameCounter = 100;
+++gameCounter;
+console.log(gameCounter);
+
+
