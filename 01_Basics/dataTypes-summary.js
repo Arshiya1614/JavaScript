@@ -60,3 +60,29 @@ console.log(typeof bigNum);
 // Object      => "object"
 // Function call => "function"
 
+
+// stack(Primitives) 
+//when we try to make changes in stack , we received its copy only 
+
+let myName = "arshiya"
+let myAlternateName = myName
+
+myAlternateName = "ayesha"
+
+console.log(myName);
+console.log(myAlternateName);
+
+// Heap (Non-Primitives)
+//Meanwhile in heap we receive its reference
+
+let user = {
+  email: "user@google.com",
+  upi : 496476474,
+
+}
+
+let userTwo = user;
+userTwo.email = "arshi@google.com";
+
+console.log(user.email);
+console.log(userTwo.email);
