@@ -7,7 +7,7 @@ for (const element of arr) {
 
 let string = "arshiya"
 for (const letter of string) {
-  // console.log(`letters are ${letter}`);
+   console.log(`letters are ${letter}`);
   
 }
 

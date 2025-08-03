@@ -14,7 +14,7 @@ const person = {
 
 // two ways of printing value
 console.log(person.name);
-console.log(person["name"]); // in this case keys are in the form string 
+console.log(person["name"]); // in this case keys are in string   form 
 
 console.log(person.email);
 console.log(person["email"]);

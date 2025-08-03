@@ -7,7 +7,7 @@
 
 (function greet() //named iife
 {
-  console.log("hello anas");
+  console.log("hello arshiya");
   
 })();
 

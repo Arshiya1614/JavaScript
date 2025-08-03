@@ -5,7 +5,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "anas"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
+ console.log(tinderUser);
 
 const regularUser = {
   email :"user@gmail.com",
@@ -35,13 +35,12 @@ const objn = Object.assign({} ,obj1 , obj2)
 console.log(objn);
 
 const target = { name:"arshi" , age : 20};
-const source = { age : 21 , name : "anas"};
+const source = { age : 21 , name : "anisha"};
 
 const returnedTarget = Object.assign(target,source);//if there are keys of same name it will consider only one
 console.log(returnedTarget);
 
 console.log(returnedTarget === target);
-
 
 user = [
   {id : 1 ,

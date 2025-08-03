@@ -3,11 +3,11 @@
 let i = 0
  while(i < 5)
  {
-   console.log(i)
+  //  console.log(i)
    i++ 
  }
 
- let arr = [ "chamkadar" , "sher" ,"khargosh"]
+ let arr = [ "chamkadar" , "sher" ,"khargosh" ,"khadus" ,"akdu" ,"ghussail" ,"pookie" ,"handsome"]
  let n =  0 
  while (n <  arr.length) {
   console.log(`anas is ${arr[n]}`);
@@ -20,6 +20,6 @@ let i = 0
 
  let score = 101
  do{
-  console.log(score);
+  // console.log(score);
   score++
  }while( score <= 100)

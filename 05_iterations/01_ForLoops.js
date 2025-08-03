@@ -5,10 +5,10 @@ for (let i = 0 ; i<= 10 ;i++)
   const element = i;
   if(element == 9)
   {
-    // console.log("9 is best number");
+     console.log("9 is best number");
     
   }
-  // console.log(element);
+   console.log(element);
 }
 
 

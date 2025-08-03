@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM</title>
+  <style>
+    .bg-black{
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <div >
+     <h1 id="title" class="heading">Arshiya learning javascript <span style="display: none;">testing text</span></h1>
+     <p>Lorem ipsum dolor sit amet.</p>
+     <input type="password" name="" id="" >
+  </div>
+  <ul>
+    <li class="list-item">orange</li>
+    <li class="list-item">kiwi</li>
+    <li class="list-item">Apple</li>
+  </ul>
+  
+</body>
+</html>
+
+
+<!-- document.getElementById('title')
+<h1 id=​"title" class=​"heading">​Arshiya learing javascript​</h1>​
+
+document.getElementById('title').id
+'title'
+
+document.getElementById('title').className
+'heading'
+
+document.getElementById('title').getAttribute
+ƒ getAttribute() { [native code] }
+(anonymous) @ VM210:1
+
+document.getElementById('title').getAttribute('id')
+'title'
+
+document.getElementById('title').getAttribute('class')
+'heading'
+
+document.getElementById('title').setAttribute('class' ,'test') 
+undefined-->
+
+<!-- const title = document.getElementById('title')
+undefined
+
+title
+<h1 id=​"title" class=​"heading">​Arshiya learing javascript​</h1>​
+
+title.style.backgroundColor = "blue"
+'blue'
+
+title.style.padding = "15px"
+'15px'
+title.style.borderRadius = "5px"
+'5px' -->
+
+
+<!-- title.innerText
+'Arshiya learing javascript'
+
+title.textContent
+'Arshiya learing javascript testing text'
+
+title.innerHTML
+'Arshiya learing javascript <span style="display: none;">testing text</span>' -->
+
+<!-- document.getElementById('title')
+<h1 id=​"title" class=​"heading">​"Arshiya learing javascript "<span style=​"display:​ none;​">​testing text​</span>​</h1>​
+
+document.getElementsByClassName('heading')
+HTMLCollection [h1#title.heading, title: h1#title.heading]0: h1#title.headingtitle: h1#title.headinglength: 1[[Prototype]]: HTMLCollection -->
+
+
+<!-- document.querySelector('#title')
+<h1 id=​"title" class=​"heading">​"Arshiya learing javascript "<span style=​"display:​ none;​">​testing text​</span>​</h1>​
+
+document.querySelector('.heading')
+<h1 id=​"title" class=​"heading">​"Arshiya learing javascript "<span style=​"display:​ none;​">​testing text​</span>​</h1>​
+
+document.querySelector('h1')
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+document.querySelector('input[type="password"]')
+<input type=​"password" name id>​ -->
+
+
+<!-- document.querySelector('ul')
+<ul>​…​</ul>​
+
+const list = document.querySelector('ul')
+undefined
+
+list.querySelector('li')
+<li style=​"background-color:​ green;​">​::marker​"orange"</li>​
+
+const myList = list.querySelector('li')
+undefined
+
+myList.style.backgroundColor = "green"
+'green'
+
+myList.innerText = "mango"
+'mango' -->
+
+
+<!-- document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+
+const allList = document.querySelectorAll('li')
+undefined
+
+allList
+NodeList(3) [li, li, li]0: li1: li2: 
+
+allList[0].style.color ="green"
+'green'
+
+allList[2].style.color ="orange"
+'orange' -->
+
+<!-- document.getElementsByClassName('list-item')
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+
+const listArr = document.getElementsByClassName('list-item')
+undefined
+
+listArr 
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-itemlength: 3[[Prototype]]: HTMLCollection
+
+Array.from(listArr)
+(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-itemlength: 
+
+const convertedArr = Array.from(listArr)
+undefined
+
+convertedArr.forEach(function (li) { li.style.color ="blue"})
+undefined -->
