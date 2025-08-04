@@ -1,0 +1,32 @@
+body{
+  text-align: center;
+  justify-items: center;
+}
+
+.button {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+
+
+#white {
+  background-color: white;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#red {
+  background-color: red;
+}
