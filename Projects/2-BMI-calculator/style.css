@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+h2{
+  color: palevioletred;
+}
+button{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: palevioletred;
+  color: white;
+  font-weight: bold;
+}
+
+#result{
+  margin-top: 15px;
+  color: palevioletred;
+  font-weight: bolder;
+  font-size: larger;
+}
