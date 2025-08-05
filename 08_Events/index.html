@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li id="tiger">tiger</li>
+    <li id="cheetah">Cheetah</li>
+    <li id="panther">Black Panther</li>
+    <li id="lion">Lion</li>
+    <li><a id="google" href="https://www.google.com/">Google</a></li>
+  </ul>
+</body>
+<script>
+  // document.getElementById('tiger').onclick = function () {
+  //   alert("tiger jinda hai")
+  // }
+
+  //attachEvent()
+  //jQuery - on
+
+  document.getElementById('tiger').addEventListener('click',function (){
+    alert("tiger jinda hai bro")
+  })
+
+
+</script>
+</html>
