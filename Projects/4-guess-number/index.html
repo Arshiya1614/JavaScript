@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../4-guess-number/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav><h4>javascript project-4</h4></nav>
+  <div class="container">
+    <h1>Number guessing Game</h1>
+    <p>Try a random guess between 1 and 100</p>
+    <p> u have 10 attempts to guess the right number </p>
+    <br>
+    <form>
+      <label for="guessFeild">Guess the Number</label>
+      <input type="text" id="guessFeild" class="guessFeild">
+      <input type="submit" id="submit" value="Submit guess" class="guessSubmit">
+    </form>
+    <div class="resultContainer">
+      <p>Previous Guesses : <span class="guesses"></span></p>
+      <p>Guesses Remaining : <span class="lastResult">10</span></p>
+      <p class="lowOrHi"></p>
+    </div>
+  </div>
+  
+</body>
+<script src="../4-guess-number/script.js"></script>
+</html>

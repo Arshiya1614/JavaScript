@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+}
+.container{
+  background-color:lavender;
+  padding: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+label{
+  font-size:xx-large;
+}
+
+.guessFeild{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.guessSubmit{
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
