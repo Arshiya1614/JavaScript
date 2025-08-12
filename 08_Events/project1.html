@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello  EveryOne</h1>
+  <button id="stop">Stop</button>
+  <p class="msg"></p>
+</body>
+<script>
+  const greet = function (){
+    console.log("hello")
+  }
+  const changeText = function(){
+      document.querySelector('h1').innerHTML = "arshiya is the best"
+  }
+
+  const set = setTimeout(changeText,2000); //execute once for define interval
+  // setInterval(greet ,1000); //exceture continuosly with interval define
+
+  document.querySelector('#stop').addEventListener('click' , function(){
+    clearTimeout(set);
+    document.querySelector('.msg').innerHTML = "stopped";
+
+  })
+
+   
+</script>
+</html>

@@ -6,11 +6,11 @@
   <title>Document</title>
 </head>
 <body>
-  <ul>
-    <li id="tiger">tiger</li>
-    <li id="cheetah">Cheetah</li>
-    <li id="panther">Black Panther</li>
-    <li id="lion">Lion</li>
+  <ul id="animals">
+    <li id="tiger" class="animal">tiger</li>
+    <li id="cheetah"  class="animal">Cheetah</li>
+    <li id="panther"  class="animal">Black Panther</li>
+    <li id="lion"  class="animal">Lion</li>
     <li><a id="google" href="https://www.google.com/">Google</a></li>
   </ul>
 </body>
@@ -21,10 +21,49 @@
 
   //attachEvent()
   //jQuery - on
+  //type , timestamp, defaultPrevented
+  //target, toElement, srcElement, currentTarget
+  //clientX , clientY, screenX , screenY
+  //altkey , ctrlkey , shiftkey , keycode
 
-  document.getElementById('tiger').addEventListener('click',function (){
-    alert("tiger jinda hai bro")
-  })
+  //Event propogation
+  //1.event public
+  //2.event propogation
+
+  // document.getElementById('animals').addEventListener('click',function (){
+  //   console.log(" clicked")
+  // },false);
+
+  //false : bubble event inside value will be trigger first then outside
+  //true : capture event opposit of bubbling
+
+  // document.getElementById('tiger').addEventListener('click',function (e){
+  //   console.log("tiger clicked");
+  //   e.stopPropagation();
+  // },false);
+
+  //  document.getElementById('google').addEventListener('click',function (e){
+  //   e.preventDefault();
+  //   console.log("google clicked");
+  //   e.stopPropagation();
+  // },false);
+
+    document.querySelector("#animals").addEventListener('click',function (e){
+    // console.log(e.target.parentNode);
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'LI'){
+      let removeIt = e.target;
+      removeIt.remove();
+    }
+    // let removeIt = e.target;
+    //  removeIt.remove();
+    // removeIt.parentNode.removeChild(removeIt);
+  },false);
+
+
+  
+  
+
 
 
 </script>
