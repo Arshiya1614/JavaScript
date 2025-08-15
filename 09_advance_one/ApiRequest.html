@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="show">SHOW</button>
+   <div id="card"></div>
+</body>
+<script>
+  const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET',requestUrl)
+  xhr.onreadystatechange = function()
+  {
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+      console.log(this.responseText);
+      const data = JSON.parse(this.responseText);
+      console.log(data.followers);
+      document.querySelector('#show').addEventListener('click' , function(){
+      // document.querySelector('#card') = data.avatar_url;
+      document.querySelector('#card').innerHTML = `<img src="${data.avatar_url}" alt="Avatar" width="150" style="border-radius:50%;">
+      <p>Followers: ${data.followers}</p>`
+    }
+            )
+      
+    }
+  }
+  
+  xhr.send();
+   
+</script>
+</html>
